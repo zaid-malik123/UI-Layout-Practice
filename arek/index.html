@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+          sans-serif;
+      }
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
+    </style>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <main class="min-h-[100vh] min-w-[100vw] bg-[#0f0e0e] px-7 py-5 md:py-10">
+      <nav class="w-full sticky top-0 z-50">
+        <div
+          class="bg-[#181717] py-4 md:py-3 px-5 mx-auto flex items-center justify-between md:justify-center w-full md:w-fit gap-4"
+        >
+          <div>
+            <h2
+              class="text-[#F5DEB3] text-[30px] tracking-[3px] font-extralight"
+            >
+              arik.
+            </h2>
+          </div>
+
+          <div class="flex items-center justify-center gap-4 md:gap-8 ml-2">
+            <h3 class="text-thin hidden md:block text-[#F5DEB3] text-[13px]">
+              SERVICES
+            </h3>
+            <h3 class="text-thin hidden md:block text-[#F5DEB3] text-[13px]">
+              WORK
+            </h3>
+            <h3 class="text-thin hidden md:block text-[#F5DEB3] text-[13px]">
+              ABOUT
+            </h3>
+            <h3 class="text-thin hidden md:block text-[#F5DEB3] text-[13px]">
+              BLOG
+            </h3>
+            <button
+              class="px-4 py-3 bg-[#dbc5a8] rounded-md text-thin text-black text-[13px]"
+            >
+              LET'S TALK
+            </button>
+            <i class="ri-menu-line text-[#dbc5a8] text-[30px] md:hidden"></i>
+          </div>
+        </div>
+      </nav>
+
+      <section>
+        <div class="h-[30vh] md:h-[70vh] flex items-center justify-center">
+          <img
+            class="h-full object-cover"
+            src="./assets/sitQqXXWe18lNYFUMPSXSHcM3A.png"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="text-[#dbc5a8] flex flex-col gap-5 items-center justify-center"
+        >
+          <h1
+            class="text-center text-[50px] md:text-[150px] font-extralight tracking-[4px] leading-[1.2]"
+          >
+            Web Designer <br />& Developer
+          </h1>
+          <p
+            class="text-center text-[12px] md:text-[20px] tracking-[3px] font-light"
+          >
+            Premium Web Design, Development, and SEO services to
+            <br class="md:block hidden" />
+            help your business stand out.
+          </p>
+
+          <div class="flex items-center justify-center gap-3 mt-10">
+            <div
+              class="w-10 h-10 rounded-full border border-[#dbc5a8] flex items-center justify-center"
+            >
+              <i class="ri-arrow-down-long-line"></i>
+            </div>
+            <span class="text-center text-[13px] tracking-[3px] font-light"
+              >My Services</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="w-full flex items-center justify-center mt-20 px-2 "
+      >
+        <div
+          class="flex items-center justify-center w-[100%] md:w-[80%] overflow-hidden"
+          
+        >
+          <!-- 1st copy -->
+          <div style="animation: marquee 10s linear infinite" class="flex gap-10 text-[20px] text-[#dbc5a8] px-10 animate-marquee ">
+            <p>Malik</p>
+            <p>Zaid</p>
+            <p>Mohd</p>
+            <p>Kaif</p>
+            <p>Aafiya</p>
+            <p>Malik</p>
+            <p>Zaid</p>
+            <p>Mohd</p>
+          </div>
+
+          <!-- 2nd copy -->
+          <div style="animation: marquee 10s linear infinite" class="flex gap-10 text-[20px] text-[#dbc5a8] px-10 animate-marquee ">
+            <p>Malik</p>
+            <p>Zaid</p>
+            <p>Mohd</p>
+            <p>Kaif</p>
+            <p>Aafiya</p>
+            <p>Malik</p>
+            <p>Zaid</p>
+            <p>Mohd</p>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
+  </body>
+</html>
