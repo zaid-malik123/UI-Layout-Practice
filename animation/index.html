@@ -1,17 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <main class="h-[100vh] w-[100vw] bg-black p-8">
-      <div class="flex gap-2">
-        <div class="flex-1 h-20 bg-red-300">A</div>
-        <div class="flex-1 h-20 bg-blue-300">B</div>
-      </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+      rel="stylesheet"
+  />
+</head>
+<body>
+    <main class="w-screen h-screen flex flex-col gap-5 items-center justify-center bg-linear-to-b from-blue-50 to-blue-200 px-5">
+      <h2 class="text-blue-500 text-[40px] mb-5">Registration Form</h2>
+       <form class="flex flex-col gap-2 w-full max-w-md gap-5 p-5 md:p-10 bg-black/10 rounded-md shadow-md shadow-blue-300">
+       <input class="h-15 w-full outline-0 border border-gray-400 focus:ring-2 focus:ring-black rounded-md px-3" type="text" placeholder="Enter UserName">
+       <input class="h-15 w-full outline-0 border border-gray-400 focus:ring-2 focus:ring-black rounded-md px-3"  type="text" placeholder="Enter UserName">
+       <input class="h-15 w-full outline-0 border border-gray-400 focus:ring-2 focus:ring-black rounded-md px-3"  type="text" placeholder="Enter UserName">
+       <button class="w-full py-5 bg-blue-500 text-xl text-white rounded-md">Submit</button>
+
+       <div class="flex items-center gap-3">
+         <div class=" flex-1 h-px bg-gray-500"></div>
+         <span class="text-xl font-semibold">OR</span>
+         <div class="flex-1 h-px bg-gray-500"></div>
+       </div>
+
+       <button class="w-full py-5 bg-gray-300 rounded-md flex items-center justify-center gap-3 text-lg cursor-pointer">
+        <i class="ri-google-fill text-[20px]"></i>
+        Continue with Google
+      </button>
+      <p class="text-center text-sm font-medium">Already have an Account ? <span class="text-blue-500">Login</span></p>
+    </form>
     </main>
-  </body>
+</body>
 </html>
